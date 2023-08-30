@@ -9,4 +9,33 @@
    height: 500px; 
    border: 1px solid #333;
    margin: 0 auto;
+   position: relative;
+   overflow: hidden;
+}
+
+.pipe{
+    position: absolute;
+    bottom: 0;
+    width: 180px;
+    animation: pipe-animation 2.2s infinite linear;
+}
+
+.mario{
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+}
+
+@keyframes pipe-animation {
+    from {
+        right:0;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+    
 }
